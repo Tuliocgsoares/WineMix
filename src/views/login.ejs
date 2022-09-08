@@ -1,8 +1,11 @@
-<html>
-  <!-- <head> -->
-  <%- include('./partials/head') %>
+<!DOCTYPE html>
+<html lang="pt-br">
+    <!-- <head> -->
+  <%- include('./partials/head')%>
   <!-- </head> -->
   
+</head>
+
   <body>
     <h1> Login </h1>
 
@@ -13,11 +16,32 @@
 
     <!-- Formulário aponta para a rota de login utilizando o método POST -->
     <form action="/login" method="POST">
-      <input type="text" placeholder="email" name="email" required>
-      <input type="password" placeholder="senha" name="senha" required>
-      <button>Fazer Login</button>
+      <img src="images/wine - logo top.svg" alt="Website logo" width="175" height="56">
+      <div class="form">
+          <p class="fraseInicial">Entrar com e-mail e senha:</p>
+          <input type="text" name="email" id="email" placeholder="e-mail" required>
+          <br>
+          <input type="password" name="senha" id="password" placeholder="senha" required>
+          <br>
+          <div class="checkbox">
+              <label> <input type="checkbox" name="rememberMe" value="rememberMe">Lembrar meu login</label>
+          </div>
+          <br>
+          <!--<input type="submit" value="entrar" class="Loginbutton">-->
+          <button type="submit" class="loginButton">Entrar</button>
+          <br>
+      </div>
+      <div>
+          <p>Esqueci a senha</p>
+          <!--<a href="/sign-up">Criar Conta</a>-->
+          <p>Novo cadastro</p>
+      </div>
     </form>
-
-    <a href="/sign-up">Criar Conta</a>
+    <br>
+    <footer class="rodape-site">
+        <div class="TDR">
+            <p> © Copyright 2022 - Winemix. SE BEBER, NÃO DIRIJA. APRECIE COM MODERAÇÃO. A VENDA DE BEBIDAS ALCOÓLICAS É PROIBIDA PARA MENORES DE 18 ANOS. </p>
+        </div>
+    </footer>
   </body>
 </html>
